@@ -1,8 +1,5 @@
-@import "variables";
-
 body {
-  background: $bear-cub-background;
-}
+  background: #34a365; }
 
 .box {
   border: 2px solid white;
@@ -11,8 +8,7 @@ body {
   margin: auto;
   margin-top: 3%;
   position: relative;
-  width: 800px;
-}
+  width: 800px; }
 
 .head,
 .head-copy,
@@ -20,24 +16,19 @@ body {
 .eyes,
 .pupil {
   border-radius: 50%;
-  position: absolute;
-}
+  position: absolute; }
 
 .head {
   background: #FFF;
   height: 65%;
   left: 25%;
-  // margin: auto;
   top: 15%;
-  width: 50%;
-  // z-index: 3;
-}
+  width: 50%; }
 
 .head-copy {
   height: 100%;
   width: 100%;
-  z-index: 2;
-}
+  z-index: 2; }
 
 .ears {
   background: #FFF;
@@ -45,32 +36,26 @@ body {
   height: 30%;
   top: 11%;
   width: 30%;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .ear-left {
-  left: -12%;
-}
+  left: -12%; }
 
 .ear-right {
-  right: -12%;
-}
+  right: -12%; }
 
 .inner-ears {
-  background: $bear-ears;
+  background: #636163;
   position: absolute;
   top: 30%;
   width: 20%;
   height: 45%;
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 .inner-left {
   left: 30%;
-  transform: rotate(135deg);
-}
+  transform: rotate(135deg); }
 
 .inner-right {
   right: 30%;
-  transform: rotate(225deg);
-}
+  transform: rotate(225deg); }
