@@ -1,23 +1,14 @@
-.box {
-  border: 2px solid white;
-  display: block;
-  height: 420px;
-  margin-top: 8%;
-  margin: auto;
-  position: relative;
-  width: 600px; }
+body {
+  background: #25A9FC; }
 
 .box {
   border: 2px solid white;
   display: block;
   height: 600px;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 5%;
   position: relative;
   width: 800px; }
-
-body {
-  background: #25A9FC; }
 
 .head,
 .head-copy,
@@ -29,9 +20,7 @@ body {
   position: absolute; }
 
 .head,
-.head-copy,
 .ears,
-.inner-ear,
 .eyes,
 .pupil {
   border-radius: 50%;
@@ -46,6 +35,7 @@ body {
 .head-copy {
   height: 100%;
   width: 100%;
+  border-radius: 50%;
   z-index: 2; }
 
 .ears {
@@ -61,11 +51,12 @@ body {
   right: -20%; }
 
 .inner-ear {
-  background: #819CAF;
   height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background: #819CAF;
   left: 10%;
-  top: 10%;
-  width: 80%; }
+  top: 10%; }
 
 .eyes {
   background: white;
@@ -115,6 +106,6 @@ body {
   .box {
     background: none;
     height: 280px;
-    margin-top: 2%;
     margin: auto;
+    margin-top: 2%;
     width: 400px; } }

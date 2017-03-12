@@ -6,7 +6,7 @@ body {
 }
 
 .box {
-  @include box;
+  @include box();
 }
 
 .head,
@@ -20,9 +20,7 @@ body {
 }
 
 .head,
-.head-copy,
 .ears,
-.inner-ear,
 .eyes,
 .pupil {
   border-radius: 50%;
@@ -37,8 +35,7 @@ body {
 }
 
 .head-copy {
-  height: 100%;
-  width: 100%;
+  @include circle(100%);
   z-index: 2;
 }
 
@@ -58,11 +55,10 @@ body {
 }
 
 .inner-ear {
+  @include circle(80%);
   background: $koala-ear;
-  height: 80%;
   left: 10%;
   top: 10%;
-  width: 80%;
 }
 
 .eyes {
@@ -100,7 +96,7 @@ body {
   z-index: 4;
 }
 
-.hair{
+.hair {
   height: 20%;
   width: 20%;
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -121,8 +117,8 @@ body {
   .box {
     background: none;
     height: 280px;
-    margin-top: 2%;
     margin: auto;
+    margin-top: 2%;
     width: 400px;
   }
 }

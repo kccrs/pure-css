@@ -6,15 +6,20 @@ body {
 }
 
 .box {
-  @include box;
+  @include box();
 }
 
 .head,
-.head-copy,
-.ears,
-.eyes,
 .inner-ears {
   border-radius: 50%;
+  position: absolute;
+}
+
+.eyes,
+.ears,
+.head-copy,
+.nose,
+.mouth {
   position: absolute;
 }
 
@@ -37,16 +42,13 @@ body {
 }
 
 .head-copy {
-  height: 100%;
-  width: 100%;
+  @include circle(100%);
   z-index: 2;
 }
 
 .ears {
-  border-radius: 50%;
-  height: 30%;
+  @include circle(30%);
   top: 11%;
-  width: 30%;
   z-index: 1;
 }
 
@@ -76,9 +78,8 @@ body {
 }
 
 .eyes {
-  height: 12%;
+  @include circle(12%);
   top: 38%;
-  width: 12%;
   z-index: 3;
 }
 
@@ -95,7 +96,6 @@ body {
   bottom: 23%;
   height: 16%;
   left: 40%;
-  position: absolute;
   width: 18%;
 }
 
@@ -104,6 +104,5 @@ body {
   bottom: 15%;
   height: 5%;
   left: 37%;
-  position: absolute;
   width: 25%;
 }

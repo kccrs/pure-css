@@ -1,9 +1,16 @@
-@mixin box ($height: 600px, $width: 800px, $margin-top){
+
+@mixin box ($margin-top: 5%, $height: 600px, $width: 800px){
   border: 2px solid white;
   display: block;
   height: $height;
-  margin-top: $margin-top;
   margin: auto;
+  margin-top: $margin-top;
   position: relative;
   width: $width;
+}
+
+@mixin circle ($size) {
+  height: $size;
+  width: $size;
+  border-radius: 50%;
 }
