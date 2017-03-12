@@ -1,36 +1,39 @@
 @import "variables";
+@import "mixins";
 
 body {
   background: $bear-cub-background;
 }
 
 .box {
-  border: 2px solid white;
-  display: block;
-  height: 600px;
-  margin: auto;
-  margin-top: 3%;
-  position: relative;
-  width: 800px;
+  @include box;
 }
 
 .head,
 .head-copy,
 .ears,
 .eyes,
-.pupil {
+.inner-ears {
   border-radius: 50%;
   position: absolute;
 }
 
-.head {
+.head,
+.ears {
   background: #FFF;
+}
+
+.eyes,
+.nose,
+.mouth {
+  background: #000;
+}
+
+.head {
   height: 65%;
   left: 25%;
-  // margin: auto;
   top: 15%;
   width: 50%;
-  // z-index: 3;
 }
 
 .head-copy {
@@ -40,7 +43,6 @@ body {
 }
 
 .ears {
-  background: #FFF;
   border-radius: 50%;
   height: 30%;
   top: 11%;
@@ -58,11 +60,9 @@ body {
 
 .inner-ears {
   background: $bear-ears;
-  position: absolute;
+  height: 45%;
   top: 30%;
   width: 20%;
-  height: 45%;
-  border-radius: 50%;
 }
 
 .inner-left {
@@ -73,4 +73,37 @@ body {
 .inner-right {
   right: 30%;
   transform: rotate(225deg);
+}
+
+.eyes {
+  height: 12%;
+  top: 38%;
+  width: 12%;
+  z-index: 3;
+}
+
+.eye-left {
+  left: 25%;
+}
+
+.eye-right {
+  right: 25%;
+}
+
+.nose {
+  border-radius: 22% 22% 45% 45%;
+  bottom: 23%;
+  height: 16%;
+  left: 40%;
+  position: absolute;
+  width: 18%;
+}
+
+.mouth {
+  border-radius: 30%;
+  bottom: 15%;
+  height: 5%;
+  left: 37%;
+  position: absolute;
+  width: 25%;
 }

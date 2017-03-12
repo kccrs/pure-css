@@ -1,5 +1,11 @@
-body {
-  background: #34a365; }
+.box {
+  border: 2px solid white;
+  display: block;
+  height: 420px;
+  margin-top: 8%;
+  margin: auto;
+  position: relative;
+  width: 600px; }
 
 .box {
   border: 2px solid white;
@@ -9,6 +15,9 @@ body {
   margin-top: 3%;
   position: relative;
   width: 800px; }
+
+body {
+  background: #34a365; }
 
 .head,
 .head-copy,
@@ -59,3 +68,35 @@ body {
 .inner-right {
   right: 30%;
   transform: rotate(225deg); }
+
+.eyes {
+  background: #000;
+  z-index: 3;
+  width: 12%;
+  height: 12%;
+  top: 38%; }
+
+.eye-left {
+  left: 25%; }
+
+.eye-right {
+  right: 25%; }
+
+.nose {
+  background: #000;
+  border-radius: 22% 22% 45% 45%;
+  height: 16%;
+  width: 18%;
+  position: absolute;
+  z-index: 4;
+  bottom: 23%;
+  left: 40%; }
+
+.mouth {
+  background: #000;
+  border-radius: 30%;
+  height: 5%;
+  width: 25%;
+  position: absolute;
+  bottom: 15%;
+  left: 37%; }
