@@ -1,0 +1,47 @@
+body {
+  background: #25A9FC; }
+
+.box {
+  border: 2px solid white;
+  display: block;
+  height: 600px;
+  margin: auto;
+  margin-top: 5%;
+  position: relative;
+  width: 800px; }
+
+.head-copy,
+.ears {
+  background: #4a4449;
+  position: absolute; }
+
+.head {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  top: 5%;
+  left: 5%;
+  border: 3px solid purple; }
+
+.head-copy {
+  border-radius: 50%;
+  height: 60%;
+  width: 55%;
+  top: 10%;
+  left: 20%;
+  border: 4px solid green;
+  -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%); }
+
+.ears {
+  height: 40%;
+  width: 30%;
+  top: 15%;
+  clip-path: polygon(90% 7%, 99% 48%, 47% 100%, 29% 98%, 15% 51%, 0% 0%); }
+
+.ear-left {
+  left: 5%;
+  transform: scale(-1, 1); }
+
+.ear-right {
+  right: 10%; }

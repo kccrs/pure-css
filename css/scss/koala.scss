@@ -2,7 +2,7 @@
 @import "mixins";
 
 body {
-  background: $koala-background;
+  background: $background-blue;
 }
 
 .box {
@@ -58,6 +58,7 @@ body {
   @include circle(80%);
   background: $koala-ear;
   left: 10%;
+  position: absolute;
   top: 10%;
 }
 
