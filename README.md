@@ -11,6 +11,7 @@ http://dailycssimages.com/
 4. Tiger
 5. Favorite Animated Animal
 6. Clock
+7. Ruler
 
 
 
