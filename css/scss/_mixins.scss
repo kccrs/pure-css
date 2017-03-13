@@ -14,3 +14,15 @@
   width: $size;
   border-radius: 50%;
 }
+
+@mixin absolute-color ($color) {
+  background: $color;
+  position: absolute;
+}
+
+@mixin height-width-top-left ($h, $w, $t, $l) {
+  height: $h;
+  width: $w;
+  top: $t;
+  left: $l;
+}

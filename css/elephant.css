@@ -10,33 +10,25 @@ body {
   position: relative;
   width: 800px; }
 
-.head-copy,
+.head,
 .ears,
 .trunk {
   background: #4a4449;
   position: absolute; }
 
 .head {
-  position: absolute;
-  height: 90%;
-  width: 90%;
-  top: 5%;
-  left: 5%;
-  border: 3px solid purple; }
-
-.head-copy {
-  border-radius: 50%;
   height: 60%;
   width: 55%;
-  top: 10%;
+  top: 7%;
   left: 20%;
+  border-radius: 50%;
   clip-path: polygon(0 0, 100% 0, 65% 100%, 35% 100%); }
 
 .ears {
+  clip-path: polygon(90% 7%, 99% 48%, 47% 100%, 29% 98%, 15% 51%, 0% 0%);
   height: 45%;
-  width: 30%;
-  top: 15%;
-  clip-path: polygon(90% 7%, 99% 48%, 47% 100%, 29% 98%, 15% 51%, 0% 0%); }
+  top: 12%;
+  width: 30%; }
 
 .ear-left {
   left: 5%;
@@ -45,19 +37,48 @@ body {
 .ear-right {
   right: 10%; }
 
+.inner-ears {
+  background: #2f2c2f;
+  position: absolute;
+  clip-path: polygon(90% 7%, 99% 48%, 47% 100%, 29% 98%, 15% 51%, 0% 0%);
+  height: 70%;
+  top: 10%;
+  width: 70%; }
+
+.inner-left {
+  right: 11%; }
+
+.inner-right {
+  left: 14%; }
+
+.eyes {
+  height: 8%;
+  width: 8%;
+  border-radius: 50%;
+  background: #151315;
+  position: absolute;
+  top: 39%; }
+
+.eye-left {
+  left: 35%; }
+
+.eye-right {
+  right: 40%; }
+
 .trunk {
-  border-radius: 25%;
-  top: 60%;
-  left: 42%;
   height: 40%;
-  width: 11%; }
+  width: 11%;
+  top: 57%;
+  left: 42%;
+  border-radius: 25%;
+  border: 1px solid #221f22; }
 
 .tusks {
-  position: absolute;
   background: #FFF;
-  width: 3%;
+  position: absolute;
   height: 20%;
-  top: 60%; }
+  top: 57%;
+  width: 3%; }
 
 .tusk-left {
   left: 36%;
