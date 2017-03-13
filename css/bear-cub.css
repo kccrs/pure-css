@@ -10,38 +10,23 @@ body {
   position: relative;
   width: 800px; }
 
-.head,
-.inner-ears {
-  border-radius: 50%;
-  position: absolute; }
-
-.eyes,
-.ears,
-.head-copy,
 .nose,
-.mouth {
+.mouth,
+.eyes {
+  background: #000;
   position: absolute; }
 
 .head,
 .ears {
-  background: #FFF; }
-
-.eyes,
-.nose,
-.mouth {
-  background: #000; }
+  background: #FFF;
+  position: absolute; }
 
 .head {
   height: 65%;
-  left: 25%;
+  width: 50%;
   top: 15%;
-  width: 50%; }
-
-.head-copy {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  z-index: 2; }
+  left: 25%;
+  border-radius: 50%; }
 
 .ears {
   height: 30%;
@@ -58,6 +43,8 @@ body {
 
 .inner-ears {
   background: #636163;
+  position: absolute;
+  border-radius: 50%;
   height: 45%;
   top: 30%;
   width: 20%; }

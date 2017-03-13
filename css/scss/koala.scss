@@ -2,7 +2,7 @@
 @import "mixins";
 
 body {
-  background: $koala-background;
+  background: $background-blue;
 }
 
 .box {
@@ -11,27 +11,15 @@ body {
 
 .head,
 .head-copy,
-.ear-left,
-.ear-right,
+.ears,
 .hair-left,
 .hair-right {
-  background: $koala-fur;
-  position: absolute;
-}
-
-.head,
-.ears,
-.eyes,
-.pupil {
-  border-radius: 50%;
-  position: absolute;
+  @include absolute-color($koala-fur);
 }
 
 .head {
-  height: 67%;
-  left: 25%;
-  top:16.5%;
-  width: 50%;
+  @include height-width-top-left(67%, 50%, 16.5%, 25%);
+  border-radius: 50%;
 }
 
 .head-copy {
@@ -40,6 +28,7 @@ body {
 }
 
 .ears {
+  border-radius: 50%;
   height: 65%;
   top: 5%;
   width: 60%;
@@ -56,13 +45,14 @@ body {
 
 .inner-ear {
   @include circle(80%);
-  background: $koala-ear;
+  @include absolute-color($koala-ear);
   left: 10%;
   top: 10%;
 }
 
 .eyes {
-  background: white;
+  @include absolute-color(#FFF);
+  border-radius: 50%;
   height: 33%;
   top: 25%;
   width: 30%;
@@ -78,29 +68,22 @@ body {
 }
 
 .pupil {
-  background: #27354A;
-  height: 30%;
-  left: 36%;
-  top: 35%;
-  width: 28%;
+  @include absolute-color(#27354A);
+  @include height-width-top-left(30%, 28%, 35%, 36%);
+  border-radius: 50%;
 }
 
 .nose {
-  background: #BE845F;
+  @include absolute-color(#BE845F)
+  @include height-width-top-left(42.5%, 25%, 45%, 37%);
   border-radius: 50px;
-  height: 42.5%;
-  left: 37%;
-  position: absolute;
-  top: 45%;
-  width: 25%;
   z-index: 4;
 }
 
 .hair {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   height: 20%;
   width: 20%;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 .hair-left {

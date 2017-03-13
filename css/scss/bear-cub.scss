@@ -2,48 +2,27 @@
 @import "mixins";
 
 body {
-  background: $bear-cub-background;
+  background: $background-green;
 }
 
 .box {
   @include box();
 }
 
-.head,
-.inner-ears {
-  border-radius: 50%;
-  position: absolute;
-}
-
-.eyes,
-.ears,
-.head-copy,
 .nose,
-.mouth {
-  position: absolute;
+.mouth,
+.eyes {
+  @include absolute-color(#000);
 }
 
 .head,
 .ears {
-  background: #FFF;
-}
-
-.eyes,
-.nose,
-.mouth {
-  background: #000;
+  @include absolute-color(#FFF);
 }
 
 .head {
-  height: 65%;
-  left: 25%;
-  top: 15%;
-  width: 50%;
-}
-
-.head-copy {
-  @include circle(100%);
-  z-index: 2;
+  @include height-width-top-left(65%, 50%, 15%, 25%);
+  border-radius: 50%;
 }
 
 .ears {
@@ -61,7 +40,8 @@ body {
 }
 
 .inner-ears {
-  background: $bear-ears;
+  @include absolute-color($bear-ears);
+  border-radius: 50%;
   height: 45%;
   top: 30%;
   width: 20%;
