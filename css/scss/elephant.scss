@@ -10,7 +10,8 @@ body {
 }
 
 .head-copy,
-.ears {
+.ears,
+.trunk {
   background: $elephant-skin;
   position: absolute;
 }
@@ -30,13 +31,11 @@ body {
   width: 55%;
   top: 10%;
   left: 20%;
-  border: 4px solid green;
-  -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
-  clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+  clip-path: polygon(0 0, 100% 0, 65% 100%, 35% 100%);
 }
 
 .ears {
-  height: 40%;
+  height: 45%;
   width: 30%;
   top: 15%;
   clip-path: polygon(90% 7%, 99% 48%, 47% 100%, 29% 98%, 15% 51%, 0% 0%);
@@ -45,9 +44,34 @@ body {
 .ear-left {
   left: 5%;
   transform: scale(-1, 1);
-
 }
 
 .ear-right {
   right: 10%;
+}
+
+.trunk {
+  border-radius: 25%;
+  top: 60%;
+  left: 42%;
+  height: 40%;
+  width: 11%;
+}
+
+.tusks {
+  position: absolute;
+  background: #FFF;
+  width: 3%;
+  height: 20%;
+  top: 60%;
+}
+
+.tusk-left {
+  left: 36%;
+  transform: rotate(10deg);
+}
+
+.tusk-right {
+  right: 42%;
+  transform: rotate(-10deg);
 }
