@@ -3,15 +3,20 @@ body {
 
 .notepad {
   background-color: #E4E4A4;
+  box-shadow: -4px 10px 20px rgba(0, 0, 0, 0.2), 4px 6px 6px rgba(0, 0, 0, 0.23);
   height: 80vh;
   margin-left: 30vw;
   margin-top: 10vh;
   position: relative;
   width: 45vw; }
+  .notepad:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .binding {
   background-color: #C9C8D0;
-  height: 5.5vh; }
+  border: 1px solid #d1d0d7;
+  height: 5.5vh;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 .line {
   border-bottom: 2px solid #8AB98A;
