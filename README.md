@@ -3,17 +3,26 @@ Daily CSS Images - 50 day challenge
 
 http://dailycssimages.com/
 
+# To run, compile, and hot reload Sass
+node-sass -o css css/scss -w
+
 ## Challenges
 
-1. Bear Cub
-2. Elephant
+1. ~~Bear Cub~~
+2. ~~Elephant~~
 3. Beaver
 4. Tiger
 5. Favorite Animated Animal
 6. Clock
 7. Ruler
-
-
+8. Notepad
+9. Calendar
+10. Pencil Jar
+11. Pizza
+12. Hamburger
+13. Taco
+14. Cheesecake
+15. Pie
 
 ## Important Links:
 
