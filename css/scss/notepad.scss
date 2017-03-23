@@ -1,2 +1,45 @@
 @import "variables";
 @import "mixins";
+
+body {
+  background: $background-teal;
+}
+
+.notepad {
+  background-color: $notepad-color;
+  height: 80vh;
+  margin-left: 30vw;
+  margin-top: 10vh;
+  position: relative;
+  width: 45vw;
+}
+
+.binding {
+  background-color: $notepad-binding-color;
+  height: 5.5vh;
+}
+
+.line {
+  border-bottom: 2px solid $notepad-horizontal-line-color;
+  min-height: 30px;
+}
+
+.vertical-line,
+.all-horizontal-lines {
+  display: inline-block;
+  height: 74.5vh;
+}
+
+.vertical-line {
+  border-left: 2px solid $notepad-vertical-line-color;
+  border-right: 2px solid $notepad-vertical-line-color;
+  left: 13%;
+  position: absolute;
+  width: 1%;
+  z-index: 3;
+}
+
+.all-horizontal-lines {
+  float: right;
+  width: 100%;
+}
