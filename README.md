@@ -3,8 +3,8 @@ Daily CSS Images - 50 day challenge
 
 http://dailycssimages.com/
 
-# To run, compile, and hot reload Sass
-node-sass -o css css/scss -w
+#### To run, compile, and hot reload Sass
+`node-sass -o css css/scss -w`
 
 ## Challenges
 
@@ -15,7 +15,7 @@ node-sass -o css css/scss -w
 5. Favorite Animated Animal
 6. Clock
 7. Ruler
-8. Notepad
+8. Notepad ** in progress
 9. Calendar
 10. Pencil Jar
 11. Pizza
