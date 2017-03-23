@@ -1,6 +1,14 @@
 @import "variables";
 @import "mixins";
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   background: $background-teal;
 }
@@ -8,13 +16,13 @@ body {
 .notepad {
   background-color: $notepad-color;
   box-shadow: -4px 10px 20px rgba(0,0,0,0.20), 4px 6px 6px rgba(0,0,0,0.23);
-  height: 80vh;
-  margin-left: 30vw;
-  margin-top: 10vh;
+  height: 85vh;
+  margin: 0 auto;
+  margin-top: 8vh;
   position: relative;
-  width: 45vw;
+  width: 40vw;
   &:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: -4px 14px 28px rgba(0,0,0,0.25), 4px 10px 10px rgba(0,0,0,0.24);
   }
 }
 
@@ -25,15 +33,10 @@ body {
   box-shadow: 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.line {
-  border-bottom: 2px solid $notepad-horizontal-line-color;
-  min-height: 30px;
-}
-
 .vertical-line,
 .all-horizontal-lines {
   display: inline-block;
-  height: 74.5vh;
+  height: 79.5vh;
 }
 
 .vertical-line {
@@ -47,5 +50,19 @@ body {
 
 .all-horizontal-lines {
   float: right;
+  padding-top: 2vh;
   width: 100%;
+}
+
+.line {
+  border-bottom: 2px solid $notepad-horizontal-line-color;
+  height: 30px;
+}
+
+.text {
+  font-family: $font-printed;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding-left: 18%;
+  padding-top: 7px;
 }
