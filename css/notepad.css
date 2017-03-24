@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie|Satisfy');
+
 html {
   box-sizing: border-box; }
 
@@ -51,4 +53,5 @@ body {
   font-size: 1.8em;
   font-weight: bold;
   padding-left: 18%;
-  padding-top: 7px; }
+  padding-top: 7px;
+}
