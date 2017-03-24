@@ -23,6 +23,8 @@ http://dailycssimages.com/
 13. Taco
 14. Cheesecake
 15. Pie
+16. Frankenstein
+17. Zombie
 
 ## Important Links:
 
