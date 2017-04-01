@@ -1,0 +1,13 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background: #840032; }
+
+.calendar {
+  width: 400px;
+  height: 400px;
+  border: 2px solid black; }

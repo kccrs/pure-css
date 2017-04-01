@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixins";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: $background-maroon;
+}
+
+.calendar {
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+}

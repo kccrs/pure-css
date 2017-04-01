@@ -15,8 +15,8 @@ http://dailycssimages.com/
 5. Favorite Animated Animal
 6. Clock
 7. Ruler
-8. Notepad ** in progress
-9. Calendar
+8. ~~Notepad~~
+9. Calendar * in progress
 10. Pencil Jar
 11. Pizza
 12. Hamburger
