@@ -23,6 +23,14 @@ http://dailycssimages.com/
 13. Taco
 14. Cheesecake
 15. Pie
+16. Frankenstein
+17. Zombie
+18. Vampire
+19. Werewolf
+20. Monsters Inc.
+21. Superman
+22. Green Lantern
+
 
 ## Important Links:
 

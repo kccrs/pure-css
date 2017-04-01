@@ -48,7 +48,17 @@ body {
 
 .text {
   font-family: "Reenie Beanie", cursive;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
   padding-left: 18%;
   padding-top: 7px; }
+
+.writing {
+  animation: type 8s steps(150, end);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%; }
+
+@keyframes type {
+  from {
+    width: 0; } }
