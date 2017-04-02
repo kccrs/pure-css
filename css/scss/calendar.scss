@@ -10,25 +10,39 @@ html {
 }
 
 body {
-  background: $background-maroon;
+  background: $background-peach;
 }
 
 .calendar {
+  // box-shadow: 10px 1px $calendar-header, .6;
+  background: $calendar-header;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  width: 600px;
-  height: 500px;
+  grid-template-rows: 75px repeat(5, 1fr);
+  grid-row-gap: 1px;
+  grid-column-gap: 1px;
+  width: 70vw;
+  height: 75vh;
   border: 2px solid $calendar-header;
   margin: 80px auto;
 }
 
 .header {
+  display: grid;
   background: $calendar-header;
   grid-column: 1 / span 7;
   grid-row: 1;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: flex-end;
+}
+
+.day {
+  color: $calendar-cell;
+  font-size: 2em;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 .cell {
-  border: 1px solid white;
+  background: $calendar-cell;
 }

@@ -5,21 +5,33 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #840032; }
+  background: #F4845F; }
 
 .calendar {
+  background: #002642;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  width: 600px;
-  height: 500px;
+  grid-template-rows: 75px repeat(5, 1fr);
+  grid-row-gap: 1px;
+  grid-column-gap: 1px;
+  width: 70vw;
+  height: 75vh;
   border: 2px solid #002642;
   margin: 80px auto; }
 
 .header {
+  display: grid;
   background: #002642;
   grid-column: 1 / span 7;
-  grid-row: 1; }
+  grid-row: 1;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: flex-end; }
+
+.day {
+  color: #E5DADA;
+  font-size: 2em;
+  padding-bottom: 5px;
+  text-align: center; }
 
 .cell {
-  border: 1px solid white; }
+  background: #E5DADA; }
