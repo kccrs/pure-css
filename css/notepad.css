@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Reenie+Beanie|Satisfy");
 html {
   box-sizing: border-box; }
 
@@ -5,7 +6,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #65AFAE; }
+  background: #65AFAE;
+  font-family: "Reenie Beanie", cursive; }
 
 .notepad {
   background-color: #E4E4A4;
@@ -21,8 +23,8 @@ body {
 .binding {
   background-color: #C9C8D0;
   border: 1px solid #d1d0d7;
-  height: 5.5vh;
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.23); }
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.23);
+  height: 5.5vh; }
 
 .vertical-line,
 .all-horizontal-lines {
@@ -30,8 +32,7 @@ body {
   height: 79.5vh; }
 
 .vertical-line {
-  border-left: 2px solid #AE664D;
-  border-right: 2px solid #AE664D;
+  border: 2px solid #AE664D;
   left: 13%;
   position: absolute;
   width: 1%;
@@ -47,14 +48,13 @@ body {
   height: 30px; }
 
 .text {
-  font-family: "Reenie Beanie", cursive;
-  font-size: 1.5em;
+  font-size: 30px;
   font-weight: bold;
   padding-left: 18%;
   padding-top: 7px; }
 
 .writing {
-  animation: type 8s steps(150, end);
+  animation: type 6s steps(150, end);
   overflow: hidden;
   white-space: nowrap;
   width: 100%; }

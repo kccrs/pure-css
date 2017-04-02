@@ -1,9 +1,7 @@
 @import "variables";
 @import "mixins";
 
-body {
-  background: $background-blue;
-}
+@include base-style($background-blue);
 
 .box {
   @include box;

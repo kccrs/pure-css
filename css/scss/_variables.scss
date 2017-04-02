@@ -1,9 +1,22 @@
 // **************** FONTS ***********************
 
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Reenie+Beanie|Satisfy');
+
+$font-calendar: 'Josefin Sans', sans-serif;
 $font-printed: 'Reenie Beanie', cursive;
-$font-cursive: 'Satisfy', cursive;
 
 // **************** COLORS ***********************
+
+// #34469D
+// #62CB69
+// #5F246B
+// #60203E
+// #822B44
+// #F27059
+// #840032
+// #F79D65
+// #E59500
+// #02040F
 
 // BACKGROUND COLORS
 $background-blue: #25A9FC;
@@ -25,3 +38,9 @@ $notepad-color: #E4E4A4;
 $notepad-binding-color: #C9C8D0;
 $notepad-horizontal-line-color: #8AB98A;
 $notepad-vertical-line-color: #AE664D;
+
+// CALENDAR
+$calendar-header-color: #002642;
+$calendar-cell-color: #E5DADA;
+$calendar-peach: #F4845F;
+$calendar-peach-ish: transparentize(#F4845F, .6);
