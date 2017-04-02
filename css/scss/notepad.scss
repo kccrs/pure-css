@@ -19,8 +19,8 @@
 .binding {
   background-color: $notepad-binding-color;
   border: 1px solid lighten($notepad-binding-color, 3);
-  height: 5.5vh;
   box-shadow: 0 6px 6px rgba(0,0,0,0.23);
+  height: 5.5vh;
 }
 
 .vertical-line,
@@ -30,8 +30,7 @@
 }
 
 .vertical-line {
-  border-left: 2px solid $notepad-vertical-line-color;
-  border-right: 2px solid $notepad-vertical-line-color;
+  border: 2px solid $notepad-vertical-line-color;
   left: 13%;
   position: absolute;
   width: 1%;
@@ -64,5 +63,7 @@
 }
 
 @keyframes type {
-  from { width: 0; }
+  from {
+    width: 0;
+  }
 }

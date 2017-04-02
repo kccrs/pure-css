@@ -23,8 +23,8 @@ body {
 .binding {
   background-color: #C9C8D0;
   border: 1px solid #d1d0d7;
-  height: 5.5vh;
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.23); }
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.23);
+  height: 5.5vh; }
 
 .vertical-line,
 .all-horizontal-lines {
@@ -32,8 +32,7 @@ body {
   height: 79.5vh; }
 
 .vertical-line {
-  border-left: 2px solid #AE664D;
-  border-right: 2px solid #AE664D;
+  border: 2px solid #AE664D;
   left: 13%;
   position: absolute;
   width: 1%;

@@ -1,54 +1,55 @@
 @import "variables";
 @import "mixins";
 
-@include base-style($background-peach, $font-calendar);
+@include base-style($calendar-peach, $font-calendar);
 
-.calendar {
-  box-shadow: -4px -5px 10px rgba(0,0,0,0.20), 4px 5px 10px 5px rgba(0,0,0,0.25);
-  background: $calendar-header;
+.calendar,
+.header {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 75px repeat(5, 1fr);
-  grid-row-gap: 1px;
+}
+
+.calendar {
+  background: $calendar-header-color;
+  border: 2px solid $calendar-header-color;
+  box-shadow: -4px -5px 10px rgba(0,0,0,0.20), 4px 5px 10px 5px rgba(0,0,0,0.25);
   grid-column-gap: 1px;
-  width: 70vw;
+  grid-row-gap: 1px;
+  grid-template-rows: 75px repeat(5, 1fr);
   height: 75vh;
-  border: 2px solid $calendar-header;
   margin: 80px auto;
+  width: 70vw;
 }
 
 .header {
-  display: grid;
-  background: $calendar-header;
+  align-items: flex-end;
+  box-shadow: 0 2px $calendar-peach;
   grid-column: 1 / span 7;
   grid-row: 1;
-  grid-template-columns: repeat(7, 1fr);
-  align-items: flex-end;
-  border-bottom: 1px solid $background-peach;
 }
 
 .day {
-  border-bottom: 1px solid $background-peach;
-  border-top: 1px solid $background-peach;
-  color: $calendar-cell;
+  border: 1px $calendar-peach;
+  border-style: solid none;
+  color: $calendar-cell-color;
   font-size: 2em;
   margin-bottom: 10px;
-  padding-bottom: 5px;
-  padding-top: 15px;
+  padding: 15px 0 5px;
   text-align: center;
 }
 
 .cell {
-  background: $calendar-cell;
+  background: $calendar-cell-color;
   font-size: 1.5em;
-  transition: font-size 0.2s ease,
-              color .02s ease,
-              padding .02s ease;
   padding: 5px 0 0 5px;
+  transition: color .02s ease,
+              font-size 0.2s ease,
+              padding .02s ease;
   &:hover {
-    color: $background-peach;
+    box-shadow: inset -3px -3px 10px $calendar-peach-ish,
+                inset 3px 3px 5px $calendar-peach-ish;
+    color: $calendar-peach;
     font-size: 4em;
     padding: 15% 0 0 28%;
-    box-shadow: inset -4px -5px 10px $calendar-peachy, inset 4px 5px 5px $calendar-peachy;
   }
 }
