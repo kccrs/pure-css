@@ -8,6 +8,18 @@ body {
   background: #840032; }
 
 .calendar {
-  width: 400px;
-  height: 400px;
-  border: 2px solid black; }
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 600px;
+  height: 500px;
+  border: 2px solid #002642;
+  margin: 80px auto; }
+
+.header {
+  background: #002642;
+  grid-column: 1 / span 7;
+  grid-row: 1; }
+
+.cell {
+  border: 1px solid white; }
