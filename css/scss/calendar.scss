@@ -1,21 +1,9 @@
 @import "variables";
 @import "mixins";
 
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  background: $background-peach;
-  font-family: $font-calendar;
-}
+@include base-style($background-peach, $font-calendar);
 
 .calendar {
-  // box-shadow: 10px 1px $calendar-header, .6;
   box-shadow: -4px -5px 10px rgba(0,0,0,0.20), 4px 5px 10px 5px rgba(0,0,0,0.25);
   background: $calendar-header;
   display: grid;
@@ -36,21 +24,31 @@ body {
   grid-row: 1;
   grid-template-columns: repeat(7, 1fr);
   align-items: flex-end;
-  border-bottom: 1px solid $calendar-cell;
+  border-bottom: 1px solid $background-peach;
 }
 
 .day {
+  border-bottom: 1px solid $background-peach;
+  border-top: 1px solid $background-peach;
   color: $calendar-cell;
   font-size: 2em;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 15px;
   text-align: center;
 }
 
 .cell {
   background: $calendar-cell;
   font-size: 1.5em;
+  transition: font-size 0.2s ease,
+              color .02s ease,
+              padding .02s ease;
   padding: 5px 0 0 5px;
   &:hover {
+    color: $background-peach;
+    font-size: 4em;
+    padding: 15% 0 0 28%;
     box-shadow: inset -4px -5px 10px $calendar-peachy, inset 4px 5px 5px $calendar-peachy;
   }
 }

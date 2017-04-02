@@ -6,7 +6,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #65AFAE; }
+  background: #65AFAE;
+  font-family: "Reenie Beanie", cursive; }
 
 .notepad {
   background-color: #E4E4A4;
@@ -48,14 +49,13 @@ body {
   height: 30px; }
 
 .text {
-  font-family: "Reenie Beanie", cursive;
-  font-size: 1.5em;
+  font-size: 30px;
   font-weight: bold;
   padding-left: 18%;
   padding-top: 7px; }
 
 .writing {
-  animation: type 8s steps(150, end);
+  animation: type 6s steps(150, end);
   overflow: hidden;
   white-space: nowrap;
   width: 100%; }

@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
 
-@include base-style($background-teal);
+@include base-style($background-teal, $font-printed);
 
 .notepad {
   background-color: $notepad-color;
@@ -50,15 +50,14 @@
 }
 
 .text {
-  font-family: $font-printed;
-  font-size: 1.5em;
+  font-size: 30px;
   font-weight: bold;
   padding-left: 18%;
   padding-top: 7px;
 }
 
 .writing {
-  animation: type 8s steps(150, end);
+  animation: type 6s steps(150, end);
   overflow: hidden;
   white-space: nowrap;
   width: 100%;

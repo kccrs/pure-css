@@ -29,17 +29,25 @@ body {
   grid-row: 1;
   grid-template-columns: repeat(7, 1fr);
   align-items: flex-end;
-  border-bottom: 1px solid #E5DADA; }
+  border-bottom: 1px solid #F4845F; }
 
 .day {
+  border-bottom: 1px solid #F4845F;
+  border-top: 1px solid #F4845F;
   color: #E5DADA;
   font-size: 2em;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 15px;
   text-align: center; }
 
 .cell {
   background: #E5DADA;
   font-size: 1.5em;
+  transition: font-size 0.2s ease, color .02s ease, padding .02s ease;
   padding: 5px 0 0 5px; }
   .cell:hover {
+    color: #F4845F;
+    font-size: 4em;
+    padding: 15% 0 0 28%;
     box-shadow: inset -4px -5px 10px rgba(244, 132, 95, 0.4), inset 4px 5px 5px rgba(244, 132, 95, 0.4); }
