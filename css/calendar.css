@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Reenie+Beanie|Satisfy");
 html {
   box-sizing: border-box; }
 
@@ -5,9 +6,11 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #F4845F; }
+  background: #F4845F;
+  font-family: "Josefin Sans", sans-serif; }
 
 .calendar {
+  box-shadow: -4px -5px 10px rgba(0, 0, 0, 0.2), 4px 5px 10px 5px rgba(0, 0, 0, 0.25);
   background: #002642;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -25,13 +28,18 @@ body {
   grid-column: 1 / span 7;
   grid-row: 1;
   grid-template-columns: repeat(7, 1fr);
-  align-items: flex-end; }
+  align-items: flex-end;
+  border-bottom: 1px solid #E5DADA; }
 
 .day {
   color: #E5DADA;
   font-size: 2em;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   text-align: center; }
 
 .cell {
-  background: #E5DADA; }
+  background: #E5DADA;
+  font-size: 1.5em;
+  padding: 5px 0 0 5px; }
+  .cell:hover {
+    box-shadow: inset -4px -5px 10px rgba(244, 132, 95, 0.4), inset 4px 5px 5px rgba(244, 132, 95, 0.4); }

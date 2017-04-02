@@ -1,17 +1,7 @@
 @import "variables";
 @import "mixins";
 
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  background: $background-teal;
-}
+@include base-style($background-teal);
 
 .notepad {
   background-color: $notepad-color;

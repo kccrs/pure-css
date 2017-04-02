@@ -1,5 +1,7 @@
 // **************** FONTS ***********************
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Reenie+Beanie|Satisfy');
 
+$font-calendar: 'Josefin Sans', sans-serif;
 $font-printed: 'Reenie Beanie', cursive;
 $font-cursive: 'Satisfy', cursive;
 
@@ -42,3 +44,4 @@ $notepad-vertical-line-color: #AE664D;
 // CALENDAR
 $calendar-header: #002642;
 $calendar-cell: #E5DADA;
+$calendar-peachy: transparentize(#F4845F, .6);
