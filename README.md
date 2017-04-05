@@ -13,10 +13,10 @@ http://dailycssimages.com/
 3. Beaver
 4. Tiger
 5. Favorite Animated Animal
-6. Clock
+6. Clock ** In progress
 7. Ruler
 8. ~~Notepad~~
-9. Calendar * in progress
+9. ~~Calendar~~
 10. Pencil Jar
 11. Pizza
 12. Hamburger
@@ -30,6 +30,8 @@ http://dailycssimages.com/
 20. Monsters Inc.
 21. Superman
 22. Green Lantern
+23. Wolverine
+24. Iron Man
 
 
 ## Important Links:
