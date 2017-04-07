@@ -32,6 +32,8 @@ http://dailycssimages.com/
 22. Green Lantern
 23. Wolverine
 24. Iron Man
+25. Captain America
+26. Apple App Store Icon
 
 
 ## Important Links:
