@@ -35,6 +35,9 @@ http://dailycssimages.com/
 25. Captain America
 26. Apple App Store Icon
 27. Bug
+28. Cogs
+29. Download
+30. Bar Graph
 
 
 ## Important Links:
