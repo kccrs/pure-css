@@ -1,9 +1,14 @@
 // **************** FONTS ***********************
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Reenie+Beanie|Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900');
+
 
 $font-calendar: 'Josefin Sans', sans-serif;
 $font-printed: 'Reenie Beanie', cursive;
+$font-javascript-1: 'Assistant', sans-serif;
+$font-javascript-2: 'Source Sans Pro', sans-serif;
 
 // **************** COLORS ***********************
 
@@ -22,6 +27,8 @@ $font-printed: 'Reenie Beanie', cursive;
 $background-blue: #25A9FC;
 $background-green: #34a365;
 $background-teal:  #65AFAE;
+$background-gray: #919292;
+$background-nearly-black: #222222;
 
 // KOALA
 $koala-fur: #A6BECF;
@@ -44,3 +51,6 @@ $calendar-header-color: #002642;
 $calendar-cell-color: #E5DADA;
 $calendar-peach: #F4845F;
 $calendar-peach-ish: transparentize(#F4845F, .6);
+
+// JAVASCRIPT LOGO
+$javascript-logo-color: #F7DF1E;
