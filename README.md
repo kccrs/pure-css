@@ -16,7 +16,7 @@ http://dailycssimages.com/
 6. Clock
 7. Ruler
 8. ~~Notepad~~
-9. Calendar * in progress
+9. ~~Calendar~~
 10. Pencil Jar
 11. Pizza
 12. Hamburger
@@ -30,6 +30,21 @@ http://dailycssimages.com/
 20. Monsters Inc.
 21. Superman
 22. Green Lantern
+23. Wolverine
+24. Iron Man
+25. Captain America
+26. Apple App Store Icon
+27. Bug
+28. Cogs
+29. Download
+30. Bar Graph
+31. ~~JavaScript Logo~~
+32. Angular Logo
+33. Vue JS Logo
+34. React Logo
+35. Elm Logo
+36. Cell Phone
+
 
 
 ## Important Links:

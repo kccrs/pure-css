@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Reenie+Beanie|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900");
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background: #222222;
+  font-family: "Josefin Sans", sans-serif; }
+
+.box {
+  border: 2px solid white;
+  display: block;
+  height: 400px;
+  margin: auto;
+  margin-top: 10%;
+  position: relative;
+  width: 400px;
+  background-color: #F7DF1E;
+  border: none; }
+
+.js {
+  bottom: 0;
+  color: black;
+  font-family: "Assistant", sans-serif;
+  font-size: 250px;
+  font-weight: bold;
+  height: 270px;
+  margin-bottom: 5%;
+  margin-right: 7%;
+  position: absolute;
+  right: 0; }
