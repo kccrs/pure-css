@@ -44,8 +44,20 @@ http://dailycssimages.com/
 34. React Logo
 35. Elm Logo
 36. Cell Phone
-
-
+37. Laptop
+38. External Monitor
+39. Keyboard
+40. Nintendo 2DS
+41. Mascot for Start-up
+42. Critter
+43. Animal
+44. Robot
+45. Space-Inspired Mascot
+46. Pinata
+47. Cake
+48. Craft Beer
+49. Dance Dance Revolution Mat
+50. Party City
 
 ## Important Links:
 
